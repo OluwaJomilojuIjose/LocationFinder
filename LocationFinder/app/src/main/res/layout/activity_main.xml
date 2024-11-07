@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F3F4F6">
+
+    <!-- Title Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location Finder"
+        android:textSize="24sp"
+        android:textColor="#2C3E50"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:textStyle="bold"/>
+
+    <!-- Address Input -->
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Address"
+        android:backgroundTint="#AAB7B8"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#2C3E50"
+        android:textSize="16sp" />
+
+    <!-- Latitude Input -->
+    <EditText
+        android:id="@+id/editTextLatitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Latitude"
+        android:backgroundTint="#AAB7B8"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#2C3E50"
+        android:textSize="16sp" />
+
+    <!-- Longitude Input -->
+    <EditText
+        android:id="@+id/editTextLongitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Longitude"
+        android:backgroundTint="#AAB7B8"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="#2C3E50"
+        android:textSize="16sp" />
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add Location"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2ECC71"
+            android:padding="12dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete Location"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#E74C3C"
+            android:padding="12dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Update Location"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3498DB"
+            android:padding="12dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonQuery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Query Location"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#F39C12"
+            android:padding="12dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>
